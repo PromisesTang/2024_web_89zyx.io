@@ -1,0 +1,73 @@
+/* FLEX 布局部分 开始*/
+div.content{
+    display: flex;
+    flex-direction: row;
+    width: 1000;
+    height: 770px;
+    background-color: lavenderblush;
+    margin-top: 20px;
+}
+div.content div#menu{
+    order: 0;
+    width: 120px;
+    height: 740px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 1%;
+    float: left;
+}
+div.ctt{
+    order: 1;
+    flex-grow: 1;
+    padding: 10px;
+    width: 900px;
+    height: 700px;
+    background-color: white;
+    float: left;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+div.picture{
+    order: 2;
+    width: 500px;
+    height: 700px;
+    background-image: url(img/picture1.png);
+    background-position: center;
+    background-size: cover;
+    float: right;
+    margin-left: 20px;
+    margin-top: 35px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+/* FLEX 布局部分 结束*/
+/* 提交表单设置 */
+div.tableRow {
+	display: table-row;
+}
+
+div.tableRow > p, div.tableRow > label, div.tableRow > input {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+div.tableRow label:first-child {
+	text-align: right;
+}
+form textarea {
+	display: table-cell;
+	width: 500px;
+	height: 200px;
+}
+legend {
+	font-weight: bold;
+}
+.comment{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    color:palevioletred;
+}
