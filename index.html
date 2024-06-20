@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <!-- 本页面所用的层叠样式表文件  -->
+    <link rel="stylesheet" href="style/universal.css" />
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- 引入 functional.js 加入时间显示代码 -->
+    <script src="js/functional.js" ></script>
+</head>
+
+<!-- 本页面的主体部分  开始-->
+<body>  
+    <!-- 本页面的页眉区部分  开始-->
+    <header class="hhhhd" role="banner">
+        <div class="cont_head" id="head1">
+            <div class="inner">
+                <div id="date"></div>      <!-- 用于显示日期的div -->
+                <div id="time"></div>      <!-- 用于显示时间的div -->
+            </div>
+        </div>
+        <div class="cont_head" id="head2" onmouseover="iconeffect_in()" onmouseout="iconeffect_out()">
+            <div class="inner"></div>      <!-- 用于显示图标的div -->
+        </div>
+    </header>
+    <!-- 本页面的页眉区部分  结束-->
+
+    <!-- 本页面的主体内容部分  开始-->
+    <div class="content">
+        <div id="menu">         <!-- 用于显示侧边导航栏的div -->
+            <!-- 用ul和li来显示导航内的内容 -->
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <p class="content1">首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <p class="content1">简介</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="reg.html" >
+                        <p class="content1">记录</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contact.html">
+                        <p class="content1">联系</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- 用于显示图片以及文字的div -->
+        <div id="pic" onmouseover="mouseovereffect(this,'indexd')" onmouseout="mouseouteffect(this,'indexd')">
+            <h1 id="indexd" style="text-align: center; opacity: 0%;">我最喜欢的动漫团队<br> "为了梦想不断前进和努力的我们!"</h1>
+        </div>
+
+        <!-- 用于显示个人简介的div -->
+        <div id="intro">
+            <h1>个人简介</h1>
+            <p>我是庄沿希，欢迎来到我的个人主页！</p>
+            <p>我认为在当今社会上，一个人的能力固然重要，可是人生的价值不能单一的以工作水平或者技能掌握来评判和衡量，我们的闪光点也绝不仅限于专业能力。</p>
+            <p>跳舞、绘画、排球是我最热衷的三个兴趣爱好，但其实我学过很多很多的新事物，包括软木画、插花等。</p>
+            <p>如你所见，我是一个爱好广泛的人，喜欢尝试新鲜事物，喜欢挑战自己，喜欢学习新知识，喜欢交朋友，喜欢分享快乐。</p>
+            <p>左边是我最喜欢的动漫团队，她们为了自己的梦想不断前进和努力，我想这是当下很多青年学子所不具备的。</p>
+            <p>我希望自己能够像她们一样，不断努力，不断前进，不断学习，不断挑战自己，成为更好的自己。</p>
+            <p>愿我们终偿所愿。</p>
+        </div>
+    </div>
+    <!-- 本页面的主体内容部分  结束-->
+
+    <!-- 本页面的页脚部分  开始-->
+    <footer>
+        <div class="footer">
+                <p style="text-align: center;">感受每一分喜悦</p>
+        </div>
+    </footer>
+    <!-- 本页面的页脚部分  结束-->
+
+</body>
+<!-- 本页面的主体部分  结束-->
+
+</html>
